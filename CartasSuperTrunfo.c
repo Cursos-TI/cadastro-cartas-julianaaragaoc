@@ -99,13 +99,55 @@ printf("\n\n=== Dados das Cartas Cadastradas ===\n");
 
   //Comparação de Cartas;
   printf("\n===Comparação de Cartas===\n");
-  printf("População: %d\n", populacao1>populacao2);
-  printf("Área: %d\n", area1>area2);
-  printf("PIB: %d\n", pib1>pib2);
-  printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1>pontosTuristicos2);
-  printf("Densidade populacional: %d\n", densidade1>densidade2);
-  printf("PIB per Capita: %d\n", PIBperCapita1>PIBperCapita2);
-  printf("Super poder: %d\n", superPoder1>superPoder2);
+  
+  printf("\nComparação de População:\n");
+  if(populacao1>populacao2){
+    printf("Carta 1 venceu! População: %d\n", populacao1);
+  } else {
+    printf("Carta 2 venceu! População: %d\n", populacao2);
+  }
+
+  printf("\nComparação de Área:\n");
+  if(area1>area2){
+    printf("Carta 1 venceu! Área (Km²): %.2f\n", area1);
+  } else {
+    printf("Carta 2 venceu! Área (Km²): %.2f\n", area2);
+  }
+  
+ printf("\nComparação de PIB:\n");
+  if(pib1>pib2){
+    printf("Carta 1 venceu! PIB (bilhões de reais): %.2f\n", pib1);
+  } else {
+    printf("Carta 2 venceu! PIB (bilhões de reais): %.2f\n", pib2);
+  }
+  
+  printf("\nComparação de Pontos Turísticos:\n");
+  if(pontosTuristicos1>pontosTuristicos2){
+    printf("Carta 1 venceu! Pontos Turísticos: %d\n", pontosTuristicos1);
+  } else {
+    printf("Carta 2 venceu! Pontos Turísticos: %d\n", pontosTuristicos2);
+  }
+  
+   printf("\nComparação de Densidade Populacional:\n");
+  if(densidade1<densidade2){
+    printf("Carta 1 venceu! Densidade Populacional: %.2f\n", densidade1);
+  } else {
+    printf("Carta 2 venceu! Densidade Populacional: %.2f\n", densidade2);
+  }
+  
+ printf("\nComparação de PIB per Capita:\n");
+  if(PIBperCapita1>PIBperCapita2){
+    printf("Carta 1 venceu! PIB per Capita: %.2f\n", PIBperCapita1);
+  } else {
+    printf("Carta 2 venceu! PIB per Capita: %.2f\n", PIBperCapita2);
+  }
+
+   printf("\nComparação de Super Poder:\n");
+  if(superPoder1>superPoder2){
+    printf("Carta 1 venceu! Super Poder: %.2f\n", superPoder1);
+  } else {
+    printf("Carta 2 venceu! Super Poder: %.2f\n", superPoder2);
+  }
 
 return 0;
 } 
